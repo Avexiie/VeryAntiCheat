@@ -1,0 +1,5 @@
+name: VeryAntiCheat
+version: 1.2
+author: [Avexiie]
+main: com.github.avexiie.VAC
+api-version: 1.13
