@@ -1,0 +1,55 @@
+#If this is set to false, notifications will appear in chat
+action-bar-notifications: true
+
+#If the TPS drops below this number, any suspicion will be ignored!
+tps-lag-threshold: 17.5
+
+#How long till each offense expires
+offense-expire-time: 40
+
+#This will cancel a player's action if they had suspicion for cheating
+cancel-on-offense: true
+
+
+#You can add a check into the disabled-checks list to disable it entirely.
+disabled-checks: []
+
+
+#This will not use a punish command on a specified hack.
+#XRay is here by default due to it being in beta.
+#To allow punishments on all checks, uncomment the following line, and delete the old one.
+#no-punish-cmd: []
+no-punish-cmd:
+  - XRay
+
+# This is for automatic command execution when a player reaches a certain amount of offenses.
+# List of available replacements to use in the command:
+# [USERNAME], [UUID], [DISPLAYNAME], [OFFENSES]
+# Color codes are supported.
+
+punish: true
+punish-command: 'minecraft:kick [USERNAME] [Basic Anti-Cheat] Cheats detected.'
+
+#This is the punish offense count for each individual check, if this isn't set, it will default to 12 for the check that doesn't exist.
+
+Flight-punish-count: 20
+Speed-punish-count: 20
+WaterWalk-punish-count: 12
+Glide/SlowFall-punish-count: 7
+Spider-punish-count: 7
+FastClimb-punish-count: 9
+Boat Fly-punish-count: 10
+Kill Aura-punish-count: 10
+Multi Aura-punish-count: 12
+Reach-punish-count: 9
+Impossible Break-punish-count: 10
+Impossible Place-punish-count: 10
+Fast Place-punish-count: 10
+Fast Break-punish-count: 10
+XRay-punish-count: 8
+Anti-Cactus-punish-count: 9
+Anti-BerryBush-punish-count: 9
+MorePackets (Timer)-punish-count: 12
+MorePackets (Nuker)-punish-count: 50
+Criticals-punish-count: 7
+Step-punish-count: 5
